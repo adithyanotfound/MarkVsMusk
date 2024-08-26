@@ -1,0 +1,7 @@
+.details li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    gap: 10px;
+}

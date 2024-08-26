@@ -1,0 +1,90 @@
+#hero{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+#hero .bg-img{
+    height: 100%;
+    position: absolute;
+    right: 100px;
+    top: 0;
+    transition: all 1s ease;
+    z-index: -1;
+    animation-name: rotate;
+    animation-duration: 1.5s;
+    object-fit: contain;
+}
+#hero h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-weight: 1000;
+    max-width: 60%;
+    padding: 50px 0;
+    line-height: 1.2;
+}
+#hero h1 p{
+    padding-top: 30px;
+}
+.hero-grid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 100px;
+    animation: floating 3s ease-in infinite alternate;
+}
+
+.hero-grid .box{
+    width: 250px;
+    height: 275px;
+    display: inline-block;
+    border-radius: 4px;
+    background-image: url('../../images/background/elon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+.hero-grid .box-2{
+    margin-left: 300px;
+    top: 90px;
+    background-image: url('../../images/background/mark.png');
+    background-position: center;
+    position: absolute;
+}
+/* Rotating Animation */
+@keyframes rotate{
+    0%{
+        opacity: 0;
+        visibility: hidden;
+        transform: rotate(-50deg);
+    }
+    100%{
+        transform: rotate(0deg);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@keyframes rotate2{
+    0%{
+        opacity: 0;
+        visibility: hidden;
+        transform: rotate(-20deg);
+    }
+    100%{
+        transform: rotate(0deg);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@keyframes floating{
+    0%{
+        transform: translateY(25px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,74 @@
+#testimonial-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    margin: 50px 0;
+    
+}
+.testimonial-title{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.testimonial-title p{
+    color: grey;
+    font-style: italic;
+    font-size: 20px;
+    width: 30%;
+}
+.testimonial-title h1{
+    font-size: 29px;
+    letter-spacing: 2px;
+    width: 60%;
+}
+.testimonials .box{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 4px;
+    width: 350px;
+    transition: all .2s ease-in;
+}
+.testimonials .user img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.testimonials .user{
+    display: flex;
+    gap: 20px;
+}
+.testimonials .user p{
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.testimonials .user span{
+    color: grey;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.testimonials{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex: 1;
+    align-content: stretch;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.testimonials .box h1{
+    color: #2dc3d0;
+    font-size: 6rem;
+}
+.testimonials .box p{
+    padding: 0 0 20px 0;
+    line-height: 1.5rem;
+}
+.testimonials .box:hover{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
+}

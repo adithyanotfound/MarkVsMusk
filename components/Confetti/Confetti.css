@@ -1,0 +1,16 @@
+#confetti{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#confetti button{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+#confetti button img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}

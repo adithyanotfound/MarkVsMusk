@@ -1,0 +1,84 @@
+#facts-container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.fact-card {
+	position: relative;
+	background: #444;
+	background-size: cover;
+	max-width: 100%;
+	height: 400px;
+	box-shadow: 4px 8px 28px rgba(39,44,49,.1), 1px 3px 8px rgba(39,44,49,.075);
+	overflow: hidden;	
+}
+.fact-card:hover{
+    box-shadow: 0 0 1px rgba(39,44,49,.2), 0 3px 16px rgba(39,44,49,.25);
+}
+.fact-card .content-mask {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.9);
+    width: 61%;
+    height: 100%;
+    padding: 0.75em 0 0.75em 2.5em;
+    overflow: auto;
+    z-index: 5;
+}
+.fact-card .content-mask::-webkit-scrollbar{
+    display: none;
+}
+.fact-card .content-mask .fact{
+    padding: 10px 0;
+}
+.fact-card .horizontal {
+    display: inline-block;
+    position: relative;
+    background: linear-gradient(to top right, rgba(255, 255, 255, 0.9) 50%, transparent 0);
+    height: 100%;
+    width: 20%;
+    overflow: hidden;
+}
+.mark{
+    background-image: url('https://cdn.mos.cms.futurecdn.net/MWLF9tpHEo6iNHNj4BW3TS-1200-80.jpg');
+}
+.elon{
+    background-image: url('https://i.insider.com/6165b2e2991f6b0018655fb3?width=700');
+}
+
+#facts-container .category {
+	display: inline-block;
+	color: rgba(#fff, 0.9);
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-align: center;
+	min-width: 45px;
+	border-radius: 5px;
+	box-shadow: 0 0 1px rgba(172, 28, 56, 0.1), 0 2px 6px rgba(172, 28, 56, 0.175);
+	margin: 3vh 2px 2.5vh;
+	padding: 6px 8px;
+	cursor: pointer;
+	z-index: 9;
+}
+.elon-category{
+    background: #e23f7e;
+}
+.musk-category{
+    background: rgba(144, 238, 144, 0.814);
+}
+.category:hover{
+    box-shadow: 0 0 1px rgba(#0a603a,.2), 0 3px 6px rgba(39,44,49,.25);
+}
+
+.post-detail {
+	color: rgba(#000, 0.55);
+	margin-top: 3vh;
+	padding-left: 2px;
+	vertical-align: middle;
+}
+.post-detail .icon svg {
+    position: relative;
+    width: 14px;
+    top: 2.25px;
+    margin-right: 7px;
+}
