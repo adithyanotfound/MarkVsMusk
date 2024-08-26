@@ -1,4 +1,5 @@
 import React from "react"
+import { useNavigate } from "react-router-dom";
 import "./Header.css"
 import { Link } from "react-router-dom"
 import { signOut } from "firebase/auth"
@@ -7,6 +8,7 @@ import userSvg from '../../images/icons/user.svg'
 import logOutSvg from '../../images/icons/circle-exclamation.svg'
 
 export default function Header({isAuth, setIsAuth}) {
+    const navigate = useNavigate();
     function displayNavbar(){
         const navbar = document.getElementById("navbar");
         navbar.style.right="0"
@@ -24,6 +26,14 @@ export default function Header({isAuth, setIsAuth}) {
             }
         )
     }
+    function checkAuthBlog() {
+        if (!localStorage.getItem("isAuth")) {
+            alert('Please login to access blogs.')
+        }
+        else {
+            navigate('/blog');
+        }
+    }
     return(
         <section id="header" className="section-p">
             {/* Logo */}
@@ -37,7 +47,7 @@ export default function Header({isAuth, setIsAuth}) {
                     <img src="../../images/icons/xmark.svg" onClick={closeNavbar}/>
                 </li>
                 <li className="active"><Link to="/">Home</Link></li>
-                <li className="active"><Link to="/blog">Blogs</Link></li>
+                <li className="active" onClick={checkAuthBlog}>Blogs</li>
                 <li className="active"><Link to="/about">About us</Link></li>
                 <li className="active"><Link to="/contact">Contact us</Link></li>
                 {!isAuth && <li className="register"><button> <Link to="/register">Register</Link></button></li>}

@@ -10,7 +10,7 @@ import LogInPage from "./LogInPage"
 import "./style.css"
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 function App(){
-    const [isAuth, setIsAuth] = React.useState(localStorage.getItem("isAuth") === 'false')
+    const [isAuth, setIsAuth] = React.useState(localStorage.getItem("isAuth"));
     return(
         <section>
             <BrowserRouter> 
