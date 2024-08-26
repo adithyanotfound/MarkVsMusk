@@ -5,3 +5,5 @@ Steps to setup locally
 - Clone the project locally
 - Create a Firebase project and add the necessary details to a .env file
 - Run `npm i` and `npm run dev` in the project's directory
+
+NOTE: Authentication has been disabled by default.
