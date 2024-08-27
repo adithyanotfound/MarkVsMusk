@@ -34,7 +34,7 @@ export default function Blog({filteredContainers}){
 
                <div className="blog-read-more">
                    <Link to={`/blog/${data.id}`}>Read More</Link>
-                   <img src="./images/icons/arrow-right.svg" alt="read more link" />
+                   <img src="https://cdn1.iconfinder.com/data/icons/basic-ui-elements-coloricon/21/04-512.png" alt="read more link" />
                </div>              
            </main>
         )

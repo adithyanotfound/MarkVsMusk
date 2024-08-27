@@ -16,7 +16,7 @@ const Filterblock = ({search, getSelectedVal, getInputVal}) => {
                 <form>
                     <input type="text" placeholder='Search for Blogs...' onChange={getInputVal} onKeyUp={search}/>
                     <button>
-                        <img src="../../images/icons/search.svg" alt="search blogs button" />
+                        <img src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-5.png" alt="search blogs button" />
                     </button>
                 </form>
         </section>

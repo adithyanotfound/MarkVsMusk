@@ -57,7 +57,7 @@ export default function Login({setIsAuth}){
                     go back to home page
                 </Link>
 
-                <p>Login to your LiveCrafter account</p>
+                <p>Login to your account</p>
 
                 <input type="email" id="email" placeholder="Email Address" required value={email} onChange={(e)=>setEmail(e.target.value)}/>
                 <input type="password" placeholder="Password" id="psswd" required value={password} onChange={(e)=>setPassword(e.target.value)}/>
@@ -78,11 +78,11 @@ export default function Login({setIsAuth}){
                     </div>
 
                     <button className="provider-btn" onClick={signInWithGoogle} type='button'>
-                        <img src="../../images/icons/google.svg" alt="google logo" />
+                        <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-icon.png" alt="google logo" />
                         Continue with Google
                     </button>
                     <button className="provider-btn" onClick={signInWithFacebook} type='button'>
-                        <img src="../../images/icons/facebook.svg" alt="facebooklogo" />
+                        <img src="https://cdn-icons-png.flaticon.com/256/20/20673.png" alt="facebooklogo" />
                         Continue with Facebook
                     </button>
 

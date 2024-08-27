@@ -29,7 +29,7 @@ export default function FeaturedPost(){
             </div>
             
             <div className="authorDetails">
-                <img src="../../images/icons/chart-simple.svg" alt="" />
+                <img src="https://static-00.iconduck.com/assets.00/poll-icon-2048x2048-yi03citz.png" alt="" />
                 <p><a href="">Featured Poll</a>on Tue, Jun 27, 2023</p>
             </div>
             
@@ -95,7 +95,7 @@ export default function FeaturedPost(){
                     <p>Share your valuable thought here an make them reach everyone.</p>
                     <div className="blog-read-more">
                         <a href="">Read More</a>
-                        <img src="./images/icons/arrow-right.svg" alt="read more link" />
+                        <img src="https://cdn1.iconfinder.com/data/icons/basic-ui-elements-coloricon/21/04-512.png" alt="read more link" />
                     </div>
                 </div>
 

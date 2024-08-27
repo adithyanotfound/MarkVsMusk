@@ -38,7 +38,6 @@ export default function Header({isAuth, setIsAuth}) {
         <section id="header" className="section-p">
             {/* Logo */}
             <div className="logo">
-                <img src="../../images/logo/logo.png" alt="" className="logo-img"/>
                 <h1 className="logo-title">MARK vs MUSK</h1>
             </div>
             {/* Navbar */}

@@ -12,7 +12,7 @@ const Confetti = () => {
             <section id="confetti">
                 <span>Was this blog helpful?</span>
                 <button id='yes' onClick={countLiked}>
-                    <img src="../../images/icons/thumbs-up.svg" alt="like icon" />
+                    <img src="https://cdn1.iconfinder.com/data/icons/hand-icon/1792/thumbs-up-512.png" alt="like icon" />
                 </button>
             </section>}
         </>
