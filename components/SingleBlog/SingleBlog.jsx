@@ -54,7 +54,7 @@ export default function SingleBlog(props){
                     </div>
 
                     <div className="reading-time">
-                        <img src="../../images/icons/clock.svg" alt="" className="icon"/>
+                        <img src="https://w7.pngwing.com/pngs/971/269/png-transparent-clock-computer-icons-clock-cdr-text-time-thumbnail.png" alt="" className="icon"/>
                         <p>Reading Time: 1 mins</p>
                     </div>
 
