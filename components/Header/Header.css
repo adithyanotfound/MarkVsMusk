@@ -33,6 +33,7 @@
     justify-content: space-between;
     padding: 0 0 0 20px;
     transition: all .15s ease;
+    margin-top: 20px;
 }
 #navbar li{
     list-style: none;

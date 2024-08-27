@@ -63,7 +63,7 @@ export default function Footer({isAuth, setIsAuth}){
             {/* Footer Bottom */}
             <section id="footer-bottom">
                 <div className="copyright">
-                    <small>@2023 - 2023 MARKvsZUCK.com</small>
+                    <small>@2023 - 2024 MARKvsZUCK.com</small>
                     <small>All rights reserved. All creations copyright belongs to the creators.</small>                </div>
                 <div className="privacy">
                     <a href="">Legal Notice</a>
