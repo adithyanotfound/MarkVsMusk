@@ -39,7 +39,7 @@ export default function SingleBlog(props){
         <section id="single-blog-container" className="section-p">
             <main className="single-blog">
                 <Link to="/blog" className="go-back-to">
-                    <img src="../../images/icons/less-than.svg" alt="" className="icon"/>
+                    <img src="https://cdn-icons-png.flaticon.com/512/3298/3298618.png" alt="" className="icon"/>
                     BACK TO ALL POSTS
                 </Link>
                 

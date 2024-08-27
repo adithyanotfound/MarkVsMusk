@@ -22,7 +22,7 @@ const Register = ({setIsAuth}) => {
         <section id="register-container">
             <form action="" id="login-form" onSubmit={signIn}>
                 <Link to="/" className="go-back-to">
-                    <img src="../../images/icons/less-than.svg" alt="" className="icon"/>
+                    <img src="https://cdn-icons-png.flaticon.com/512/3298/3298618.png" alt="" className="icon"/>
                     go back to home page
                 </Link>
 

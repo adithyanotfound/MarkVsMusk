@@ -11,12 +11,12 @@ export default function ContactUsGroups(props){
 
                 <div className="details">
                     <li>
-                        <img src="./images/icons/envelope.svg" alt="" className="icon"/>
+                        <img src="https://w7.pngwing.com/pngs/1011/641/png-transparent-message-logo-yahoo-mail-email-address-webmail-email-icon-miscellaneous-angle-triangle-thumbnail.png" alt="" className="icon"/>
                         <p>{props.email}</p>
                     </li>
 
                     <li>
-                        <img src="./images/icons/phone.svg" alt="" className="icon"/>
+                        <img src="https://cdn-icons-png.freepik.com/256/455/455705.png?semt=ais_hybrid" alt="" className="icon"/>
                         <p>{props.contact}</p>
                     </li>
                 </div>
