@@ -21,13 +21,13 @@ const Register = ({setIsAuth}) => {
             if (error.code === 'auth/missing-password') {
                 alert('Password cannot be empty');
             }
-            if (error.code === 'Password should be at least 6 characters (auth/weak-password)') {
+            if (error.code === 'auth/weak-password') {  
                 alert('Password should be at least 6 characters');
             }
             if (error.code === 'auth/email-already-in-use') {
                 alert('Email already in use. Please try again with a different one. ');
             }
-            console.log(error);
+            console.log(error.code);
         })
     }
     return (
