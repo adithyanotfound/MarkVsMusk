@@ -18,11 +18,9 @@ export default function Footer({isAuth, setIsAuth}){
                 <div className="col">
                     <h4 className="title">About</h4>
                     <div className="footer-links">
-                        <a href="">About us</a>
-                        <a href="">Contact us</a>
-                        <a href="">Subscribe</a>
-
-                        
+                        <a href="https://markversusmusk.web.app/about">About us</a>
+                        <a href="https://markversusmusk.web.app/contact">Contact us</a>
+                        <a href="https://markversusmusk.web.app/">Subscribe</a>
                     </div>
                 </div>
                 <div className="col">

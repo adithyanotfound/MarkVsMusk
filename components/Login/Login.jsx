@@ -28,9 +28,19 @@ export default function Login({setIsAuth}){
             navigate("/")
         })
         .catch((error) => {
-            const errorCode = error.code;
-            const errorMessage = error.message;
-            console.error("Sign-in error:", errorMessage);
+            if (error.code === 'auth/invalid-credential') {
+                alert('Invalid email or password');
+            }
+            if (error.code === 'auth/missing-password') {
+                alert('Password cannot be empty');
+            }
+            if (error.code === 'Password should be at least 6 characters (auth/weak-password)') {
+                alert('Password should be at least 6 characters');
+            }
+            if (error.code === 'auth/email-already-in-use') {
+                alert('Email already in use. Please try again with a different one. ');
+            }
+            console.log(error);
         });
         }
 
@@ -67,7 +77,7 @@ export default function Login({setIsAuth}){
                     <small>{`Please ${text} the required field`}</small>
                 </div> */}
                 <a href="" id="forget-pswd">Forgot your password?</a>
-                <button className="logIn-btn" type="submit">Sign In</button>
+                <button className="logIn-btn" type="submit" onClick={signInWithEmailAndPassword}>Sign In</button>
 
                 <div className="provider-sign-in-container">
 
